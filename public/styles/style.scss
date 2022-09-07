@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+$themeColor: #b7968f;
+$secondColor: #dfd1c1;
+$mainFontColor: #5b433e;
+$mainBackColor: #f9f4f1;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+header {
+  background-color: $mainBackColor;
+  color: $mainFontColor;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+nav {
+  background-color: $themeColor;
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    li {
+      padding: 0.5rem 1rem;
+      &:hover {
+        background-color: $secondColor;
+      }
+      a {
+        color: white;
+        text-decoration: none; /*刪除底線*/
+        font-size: 1.3rem;
+        //   position: relative;
+        //   left: 30%;
+        transition: all 0.25s ease;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+  section.index_top {
+    background-color: $mainBackColor;
+    img {
+      width: 100%;
+    }
+  }
+  section.container {
+    padding: 1rem 0.5rem;
+    background-color: $mainBackColor;
+    color: $mainFontColor;
+    display: flex;
+    justify-content: space-around;
+    section.left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        width: 40vw;
+        margin: 0.5rem;
+        text-align: center;
+        font-size: 2rem;
+      }
+      p {
+        width: 40vw;
+        flex-direction: column;
+      }
+    }
+    section.right {
+      h4 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.5rem;
+      }
+      form.signin {
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 50%;
+          justify-content: center;
+          position: relative;
+          left: 70px;
+          margin: 0.7rem 0rem;
+        }
+      }
+      form.signup {
+        button {
+          width: 50%;
+          justify-content: center;
+          position: relative;
+          left: 70px;
+        }
+      }
+    }
+  }
+
+  section.trafficInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    section.address {
+      margin: 1rem;
+      color: $mainFontColor;
+      font-size: 1.5rem;
+    }
+    section.openTime {
+      color: $mainFontColor;
+      font-size: 1.5rem;
+    }
+    section.map {
+      margin: 1rem;
+    }
+  }
+  section.reserInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: 150px;
+    }
+    a {
+      text-decoration: none;
+      color: $mainFontColor;
+      position: relative;
+      top: 150px;
+    }
+  }
+}

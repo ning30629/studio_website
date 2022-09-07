@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+header {
+  background-color: #f9f4f1;
+  color: #5b433e;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #b7968f;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+nav ul li:hover {
+  background-color: #dfd1c1;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none; /*刪除底線*/
+  font-size: 1.3rem;
+  transition: all 0.25s ease;
+}
+
+main {
+  width: 100%;
+}
+main section.index_top {
+  background-color: #f9f4f1;
+}
+main section.index_top img {
+  width: 100%;
+}
+main section.container {
+  padding: 1rem 0.5rem;
+  background-color: #f9f4f1;
+  color: #5b433e;
+  display: flex;
+  justify-content: space-around;
+}
+main section.container section.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main section.container section.left h3 {
+  width: 40vw;
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+main section.container section.left p {
+  width: 40vw;
+  flex-direction: column;
+}
+main section.container section.right h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+main section.container section.right form.signin {
+  flex-direction: column;
+  justify-content: center;
+}
+main section.container section.right form.signin button {
+  width: 50%;
+  justify-content: center;
+  position: relative;
+  left: 70px;
+  margin: 0.7rem 0rem;
+}
+main section.container section.right form.signup button {
+  width: 50%;
+  justify-content: center;
+  position: relative;
+  left: 70px;
+}
+main section.trafficInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main section.trafficInfo section.address {
+  margin: 1rem;
+  color: #5b433e;
+  font-size: 1.5rem;
+}
+main section.trafficInfo section.openTime {
+  color: #5b433e;
+  font-size: 1.5rem;
+}
+main section.trafficInfo section.map {
+  margin: 1rem;
+}
+main section.reserInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.reserInfo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 150px;
+}
+main section.reserInfo a {
+  text-decoration: none;
+  color: #5b433e;
+  position: relative;
+  top: 150px;
+}/*# sourceMappingURL=style.css.map */
