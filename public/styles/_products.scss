@@ -1,0 +1,38 @@
+main {
+  section.alert {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    section.signin_ {
+      h4 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0.5rem;
+      }
+      form.signin {
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 50%;
+          justify-content: center;
+          position: relative;
+          left: 70px;
+          margin: 0.7rem 0rem;
+        }
+      }
+      form.signup {
+        button {
+          width: 50%;
+          justify-content: center;
+          position: relative;
+          left: 70px;
+        }
+      }
+    }
+  }
+}

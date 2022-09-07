@@ -27,7 +27,10 @@ def collections():
 
 @app.route("/products")
 def products():
-    return render_template("products.html")    
+    if "nickname" in session:
+        return render_template("member.html")   
+    else:
+        return render_template("products.html")    
 
 @app.route("/reservation")
 def reservation():

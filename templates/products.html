@@ -21,6 +21,28 @@
         <li><a href="/traffic">交通資訊</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <section class="alert">
+        <h3>請先登入或註冊會員</h3>
+        <section class="signin_">
+          <h4>會員登入及註冊</h4>
+          <form class="signin" action="/signin" method="POST">
+            <label for="email">信箱：</label>
+            <input id="email" type="email" name="email" required /> <br />
+            <label for="password">密碼：</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+            /><br />
+            <button type="submit">登入</button>
+          </form>
+          <form class="signup" action="/signup_button">
+            <button type="submit">註冊</button>
+          </form>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
